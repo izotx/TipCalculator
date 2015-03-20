@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,211 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zB2-mn-dBc">
+                                <rect key="frame" x="0.0" y="260" width="600" height="360"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNc-7M-0gI">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9p-26-TKF">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKr-TQ-n9E" customClass="CustomButton" customModule="TipCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="200" y="252" width="200" height="108"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="18%">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="button18:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PxJ-Aj-ryD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88s-6G-gbL" customClass="CustomButton" customModule="TipCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="400" y="252" width="200" height="108"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="20%">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="button20:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XGa-NN-nOv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-mK-x8x">
+                                                        <rect key="frame" x="58" y="39" width="484" height="31"/>
+                                                        <connections>
+                                                            <action selector="billChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="leh-6U-cXj"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-gc-VKA">
+                                                        <rect key="frame" x="60" y="15" width="24" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Hi-Zyr">
+                                                        <rect key="frame" x="59" y="102" width="484" height="31"/>
+                                                        <connections>
+                                                            <action selector="tipChanged:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5QT-DR-2qG"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-AM-fqc">
+                                                        <rect key="frame" x="458" y="81" width="82" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="82" id="ZsV-WC-5Kh"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="nzw-BL-3vC"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-OX-GTq">
+                                                        <rect key="frame" x="61" y="81" width="46" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckm-JU-R1s">
+                                                        <rect key="frame" x="458" y="15" width="82" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="82" id="ho1-Xp-Onr"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="MUg-5X-8US"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-RQ-vsb" customClass="CustomButton" customModule="TipCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="252" width="200" height="108"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                                        <state key="normal" title="15%">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="button15:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hgC-SG-8s4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="88s-6G-gbL" firstAttribute="leading" secondItem="EKr-TQ-n9E" secondAttribute="trailing" id="0Jp-WW-qaG"/>
+                                                    <constraint firstItem="ZeI-mK-x8x" firstAttribute="top" secondItem="Ckm-JU-R1s" secondAttribute="bottom" constant="2" id="451-GJ-sfZ"/>
+                                                    <constraint firstItem="88s-6G-gbL" firstAttribute="top" secondItem="EKr-TQ-n9E" secondAttribute="top" id="7C1-2E-RR8"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="width" secondItem="a9p-26-TKF" secondAttribute="width" multiplier="0.333333" id="BP2-VP-LYf"/>
+                                                    <constraint firstItem="RAd-OX-GTq" firstAttribute="top" secondItem="ZeI-mK-x8x" secondAttribute="bottom" constant="12" id="Cnb-yX-tYC"/>
+                                                    <constraint firstItem="ZeI-mK-x8x" firstAttribute="trailing" secondItem="Ckm-JU-R1s" secondAttribute="trailing" id="F8E-aL-Yw1"/>
+                                                    <constraint firstItem="RAd-OX-GTq" firstAttribute="leading" secondItem="pMd-Hi-Zyr" secondAttribute="leading" id="Fhp-rG-s0t"/>
+                                                    <constraint firstItem="RAd-OX-GTq" firstAttribute="top" secondItem="ysg-AM-fqc" secondAttribute="top" id="HOd-He-5US"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="leading" secondItem="a9p-26-TKF" secondAttribute="leading" id="QBv-F6-ipB"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="height" secondItem="a9p-26-TKF" secondAttribute="height" multiplier="0.2" id="Shh-NQ-KPG"/>
+                                                    <constraint firstItem="88s-6G-gbL" firstAttribute="height" secondItem="EKr-TQ-n9E" secondAttribute="height" id="X5U-gi-4do"/>
+                                                    <constraint firstItem="ZeI-mK-x8x" firstAttribute="width" secondItem="a9p-26-TKF" secondAttribute="width" multiplier="0.8" id="XyN-ra-xtk"/>
+                                                    <constraint firstItem="88s-6G-gbL" firstAttribute="width" secondItem="EKr-TQ-n9E" secondAttribute="width" id="aK9-K3-9lF"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="top" secondItem="EKr-TQ-n9E" secondAttribute="top" id="cjz-Yb-al8"/>
+                                                    <constraint firstItem="fjg-gc-VKA" firstAttribute="top" secondItem="Ckm-JU-R1s" secondAttribute="top" id="csT-Y5-qtj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hnw-RQ-vsb" secondAttribute="bottom" id="fN6-bf-P4F"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="trailing" secondItem="EKr-TQ-n9E" secondAttribute="leading" id="gB8-me-YPz"/>
+                                                    <constraint firstItem="fjg-gc-VKA" firstAttribute="leading" secondItem="ZeI-mK-x8x" secondAttribute="leading" id="iiS-ku-Q84"/>
+                                                    <constraint firstItem="Ckm-JU-R1s" firstAttribute="top" secondItem="a9p-26-TKF" secondAttribute="top" constant="30" id="mxL-Vd-o2J"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="height" secondItem="EKr-TQ-n9E" secondAttribute="height" id="q7i-6Z-S4J"/>
+                                                    <constraint firstItem="RAd-OX-GTq" firstAttribute="bottom" secondItem="pMd-Hi-Zyr" secondAttribute="top" id="qiR-6t-k3e"/>
+                                                    <constraint firstAttribute="centerX" secondItem="ZeI-mK-x8x" secondAttribute="centerX" id="rgL-tj-gDa"/>
+                                                    <constraint firstItem="Hnw-RQ-vsb" firstAttribute="width" secondItem="EKr-TQ-n9E" secondAttribute="width" id="sX1-oI-zV5"/>
+                                                    <constraint firstItem="ysg-AM-fqc" firstAttribute="trailing" secondItem="Ckm-JU-R1s" secondAttribute="trailing" id="sw0-BL-aoB"/>
+                                                    <constraint firstItem="ZeI-mK-x8x" firstAttribute="width" secondItem="pMd-Hi-Zyr" secondAttribute="width" id="tLd-7F-hM3"/>
+                                                    <constraint firstItem="ZeI-mK-x8x" firstAttribute="leading" secondItem="pMd-Hi-Zyr" secondAttribute="leading" constant="-1" id="vuB-9Y-tfp"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="a9p-26-TKF" firstAttribute="height" secondItem="bNc-7M-0gI" secondAttribute="height" id="3zf-8z-2w4"/>
+                                            <constraint firstAttribute="width" secondItem="a9p-26-TKF" secondAttribute="width" id="DxA-h6-Iu1"/>
+                                            <constraint firstItem="a9p-26-TKF" firstAttribute="leading" secondItem="bNc-7M-0gI" secondAttribute="leading" id="elH-7h-v3u"/>
+                                            <constraint firstAttribute="bottom" secondItem="a9p-26-TKF" secondAttribute="bottom" id="o4I-KS-dpO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bNc-7M-0gI" firstAttribute="height" secondItem="zB2-mn-dBc" secondAttribute="height" id="0CG-L5-4y5"/>
+                                    <constraint firstItem="bNc-7M-0gI" firstAttribute="width" secondItem="zB2-mn-dBc" secondAttribute="width" id="9dg-gY-DSI"/>
+                                    <constraint firstItem="bNc-7M-0gI" firstAttribute="leading" secondItem="zB2-mn-dBc" secondAttribute="leading" id="DCs-Ur-aJk"/>
+                                    <constraint firstAttribute="centerX" secondItem="bNc-7M-0gI" secondAttribute="centerX" id="Fq8-w9-yOl"/>
+                                    <constraint firstAttribute="trailing" secondItem="bNc-7M-0gI" secondAttribute="trailing" id="X3O-ut-yWa"/>
+                                    <constraint firstItem="bNc-7M-0gI" firstAttribute="top" secondItem="zB2-mn-dBc" secondAttribute="top" id="fP6-dS-oHH"/>
+                                    <constraint firstAttribute="centerY" secondItem="bNc-7M-0gI" secondAttribute="centerY" constant="-123" id="pKV-56-SfS"/>
+                                    <constraint firstAttribute="bottom" secondItem="bNc-7M-0gI" secondAttribute="bottom" id="y8C-Ep-3GR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pKV-56-SfS"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpC-f8-eNL">
+                                <rect key="frame" x="0.0" y="20" width="600" height="240"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-s3-MpX" customClass="TipView" customModule="TipCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="240" height="240"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ug9-s3-MpX" secondAttribute="height" multiplier="1:1" id="1pV-Yo-5fh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.83771929824561386" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="ug9-s3-MpX" secondAttribute="centerY" id="4eP-Wx-U1w"/>
+                                    <constraint firstItem="ug9-s3-MpX" firstAttribute="width" secondItem="PpC-f8-eNL" secondAttribute="width" multiplier="0.55" id="cdi-kk-BC8"/>
+                                    <constraint firstAttribute="centerX" secondItem="ug9-s3-MpX" secondAttribute="centerX" id="ewJ-18-bi4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zB2-mn-dBc" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="9wz-fW-3EF"/>
+                            <constraint firstItem="PpC-f8-eNL" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.4" id="Dg4-Ze-7Pd"/>
+                            <constraint firstItem="PpC-f8-eNL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="OVR-Rp-NLA"/>
+                            <constraint firstItem="zB2-mn-dBc" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.55" id="PLA-rg-qXG"/>
+                            <constraint firstAttribute="width" secondItem="PpC-f8-eNL" secondAttribute="width" id="XdB-aK-gNB"/>
+                            <constraint firstAttribute="centerX" secondItem="PpC-f8-eNL" secondAttribute="centerX" id="fE8-NE-y0K"/>
+                            <constraint firstAttribute="centerX" secondItem="zB2-mn-dBc" secondAttribute="centerX" id="hCx-GI-NUC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zB2-mn-dBc" secondAttribute="bottom" id="kLm-HK-9E7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kLm-HK-9E7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="kLm-HK-9E7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="billSlider" destination="ZeI-mK-x8x" id="pbX-WH-RhX"/>
+                        <outlet property="billTextField" destination="Ckm-JU-R1s" id="aR8-7o-kIi"/>
+                        <outlet property="scrollView" destination="zB2-mn-dBc" id="sGY-Bz-zCd"/>
+                        <outlet property="tipSlider" destination="pMd-Hi-Zyr" id="0fb-0p-aGa"/>
+                        <outlet property="tipTextField" destination="ysg-AM-fqc" id="OyQ-vg-qBS"/>
+                        <outlet property="tipWidget" destination="ug9-s3-MpX" id="AXj-EL-cHK"/>
+                        <outlet property="widgetView" destination="PpC-f8-eNL" id="fG6-1v-Xp3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="91" y="369"/>
         </scene>
     </scenes>
 </document>

@@ -8,18 +8,183 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CustomButton:UIButton{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.layer.borderColor = UIColor.lightGrayColor().CGColor!
+        self.layer.borderWidth = 1
+        
+        
+    }
+    
+    
+}
 
+class ViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var tipTextField: UITextField!
+    @IBOutlet weak var billTextField: UITextField!
+    
+    @IBOutlet weak var tipWidget: TipView!
+    @IBOutlet weak var tipSlider: UISlider!
+    @IBOutlet weak var billSlider: UISlider!
+    var activeTextField:UITextField?
+    var tipEngine = TipEngine()
+    
+    @IBOutlet weak var widgetView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        updateUI()
+        
+        self.widgetView.layer.borderColor = UIColor.whiteColor().CGColor!
+        self.widgetView.layer.borderWidth = 1
     }
 
+    
+    
+    func updateUI(){
+        
+//        var tipText = String(format: "%.0f%%", tipEngine.updateTotals().tipPercent);
+//        var billText = String(format: "$%.0f", tipEngine.bill);
+        
+        self.tipTextField.text = "\(TipEngine.getNiceText(tipEngine.updateTotals().tipPercent * 100  , precision: 0)!)%"
+        
+        self.billTextField.text = "$\(TipEngine.getNiceText(tipEngine.bill, precision: 2)!)"
+ 
+        self.tipWidget.tipEngine = tipEngine
+        self.tipSlider.value = Float(tipEngine.tipPercentage)
+        self.billSlider.value = Float(tipEngine.bill)
+    }
+    
+    
+    @IBAction func tipChanged(sender: AnyObject) {
+        tipEngine.tipPercentage = Double(self.tipSlider.value)
+        updateUI()
+        
+        
+    }
+   
+    @IBAction func billChanged(sender: AnyObject) {
+
+        tipEngine.bill = Double(self.billSlider.value)
+        updateUI()
+
+    }
+
+    @IBAction func button20(sender: AnyObject) {
+        tipEngine.tipPercentage = 0.2
+         updateUI()
+    }
+    @IBAction func button18(sender: AnyObject) {
+        tipEngine.tipPercentage = 0.18
+         updateUI()
+    }
+ 
+    @IBAction func button15(sender: AnyObject) {
+        tipEngine.tipPercentage = 0.15
+        updateUI()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func registerForKeyboardNotifications() {
+      
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self,
+            selector: "keyboardWillBeShown:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        notificationCenter.addObserver(self,
+            selector: "keyboardWillBeHidden:",
+            name: UIKeyboardWillHideNotification,
+            object: nil)
+    }
+    
+    
+    func addDoneButtonOnKeyboard()
+    {
+        var doneToolbar: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, 320, 50))
+        doneToolbar.barStyle = UIBarStyle.BlackTranslucent
+        
+        var flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        var done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: Selector("doneButtonAction"))
+        
+        var items = NSMutableArray()
+        items.addObject(flexSpace)
+        items.addObject(done)
+        
+        doneToolbar.items = items as [AnyObject]
+        doneToolbar.sizeToFit()
+        if let txt  = self.activeTextField{
+           txt.inputAccessoryView = doneToolbar
+            
+        }
+    }
+    
+    func doneButtonAction()
+    {
+        if let txt  = self.activeTextField{
+            txt.resignFirstResponder()
+            
+        }
+    }
+
+    
+    func keyboardWillBeShown(sender: NSNotification) {
+        let info: NSDictionary = sender.userInfo!
+        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+        let keyboardSize: CGSize = value.CGRectValue().size
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+        
+        // If active text field is hidden by keyboard, scroll it so it's visible
+        // Your app might not need or want this behavior.
+        var aRect: CGRect = self.view.frame
+        aRect.size.height -= keyboardSize.height
+        let activeTextFieldRect: CGRect? = activeTextField?.frame
+        let activeTextFieldOrigin: CGPoint? = activeTextFieldRect?.origin
+        if (!CGRectContainsPoint(aRect, activeTextFieldOrigin!)) {
+            scrollView.scrollRectToVisible(activeTextFieldRect!, animated:true)
+        }
+    }
+    
+    // Called when the UIKeyboardWillHideNotification is sent
+    func keyboardWillBeHidden(sender: NSNotification) {
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsZero
+        let insets: UIEdgeInsets = UIEdgeInsetsMake(self.scrollView.contentInset.top, 0, 0, 0)
+        scrollView.contentInset = insets//contentInsets
+        scrollView.scrollIndicatorInsets = insets//contentInsets
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField!) {
+        activeTextField = textField
+        scrollView.scrollEnabled = true
+        self.addDoneButtonOnKeyboard()
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField!) {
+        activeTextField = nil
+        scrollView.scrollEnabled = false
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerForKeyboardNotifications()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
 
 }
 
