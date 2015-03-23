@@ -21,6 +21,7 @@
 		242DB46D1A9AE514000CC644 /* Stylekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46C1A9AE514000CC644 /* Stylekit.swift */; };
 		242DB46F1A9C0EB0000CC644 /* TipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46E1A9C0EB0000CC644 /* TipEngine.swift */; };
 		24BEC8771ABC3A5C00148325 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BEC8761ABC3A5C00148325 /* Images.xcassets */; };
+		24BEC8781ABE88D700148325 /* TipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46E1A9C0EB0000CC644 /* TipEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242DB4511A99761C000CC644 /* InterfaceController.swift in Sources */,
+				24BEC8781ABE88D700148325 /* TipEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +581,7 @@
 		242DB4661A99761D000CC644 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -596,7 +598,7 @@
 		242DB4671A99761D000CC644 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				IBSC_MODULE = TipCalculator_WatchKit_Extension;
 				INFOPLIST_FILE = "TipCalculator WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
