@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -10,39 +10,8 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TipCalculator_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="Mrd-ke-sNC">
-                            <items>
-                                <slider width="0.60000000000000009" height="1" alignment="left" continuous="YES" value="1" minimum="1" maximum="1000" steps="1000" id="FTa-En-dU2">
-                                    <connections>
-                                        <action selector="billStepperChanged:" destination="AgC-eL-Hgc" id="TmS-Ae-toV"/>
-                                    </connections>
-                                </slider>
-                                <group width="0.40000000000000013" alignment="left" layout="vertical" id="5Ru-xF-92k">
-                                    <items>
-                                        <label width="1" height="0.40000000000000013" alignment="left" text="Bill" textAlignment="center" id="R80-wR-1s0">
-                                            <fontDescription key="font" type="system" pointSize="11"/>
-                                        </label>
-                                        <label width="1" height="0.60000000000000009" alignment="left" text="$90.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="9Sj-vp-NsD">
-                                            <fontDescription key="font" type="system" pointSize="15"/>
-                                        </label>
-                                    </items>
-                                    <variation key="device=watch42mm">
-                                        <mask key="items">
-                                            <include reference="R80-wR-1s0"/>
-                                            <include reference="9Sj-vp-NsD"/>
-                                        </mask>
-                                    </variation>
-                                </group>
-                            </items>
-                            <variation key="device=watch42mm">
-                                <mask key="items">
-                                    <include reference="FTa-En-dU2"/>
-                                    <include reference="5Ru-xF-92k"/>
-                                </mask>
-                            </variation>
-                        </group>
                         <separator alignment="left" id="C8o-aL-cT0"/>
-                        <group width="1" height="0.25" alignment="left" layout="vertical" id="Crf-kZ-Q1e">
+                        <group width="1" height="0.34999999999999998" alignment="left" layout="vertical" id="Crf-kZ-Q1e">
                             <items>
                                 <group width="1" height="0.40000000000000013" alignment="left" id="WtG-YC-kgZ">
                                     <items>
@@ -87,19 +56,64 @@
                             </variation>
                         </group>
                         <separator alignment="left" id="xt7-fX-7oa"/>
+                        <group width="1" height="0.20000000000000015" alignment="left" id="Mrd-ke-sNC">
+                            <items>
+                                <slider width="0.60000000000000009" height="1" alignment="left" continuous="YES" value="10" minimum="1" maximum="1000" steps="1000" id="FTa-En-dU2">
+                                    <connections>
+                                        <action selector="billStepperChanged:" destination="AgC-eL-Hgc" id="TmS-Ae-toV"/>
+                                    </connections>
+                                </slider>
+                                <group width="0.40000000000000013" alignment="left" layout="vertical" id="5Ru-xF-92k">
+                                    <items>
+                                        <label width="1" height="0.40000000000000013" alignment="left" text="Bill" textAlignment="center" id="R80-wR-1s0">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="0.60000000000000009" alignment="left" text="$10.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="9Sj-vp-NsD">
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="R80-wR-1s0"/>
+                                            <include reference="9Sj-vp-NsD"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="FTa-En-dU2"/>
+                                    <include reference="5Ru-xF-92k"/>
+                                </mask>
+                            </variation>
+                        </group>
                         <group width="1" height="0.20000000000000015" alignment="left" id="gkr-bo-3kF">
                             <items>
-                                <slider width="0.70000000000000007" height="1" alignment="left" continuous="YES" value="1" maximum="100" steps="100" id="wJ4-S2-qbg">
+                                <slider width="0.59999999999999998" height="1" alignment="left" continuous="YES" value="15" maximum="100" steps="100" id="wJ4-S2-qbg">
                                     <connections>
                                         <action selector="tipStepperChanged:" destination="AgC-eL-Hgc" id="Azm-Vx-RGx"/>
                                     </connections>
                                 </slider>
-                                <label width="0.30000000000000016" height="1" alignment="left" text="15%" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="Ohe-BP-dK1"/>
+                                <group width="0.40000000000000013" alignment="left" layout="vertical" id="0cK-WB-Die">
+                                    <items>
+                                        <label width="1" height="0.40000000000000013" alignment="left" text="Tip%" textAlignment="center" id="bbT-F7-pcE">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="0.60000000000000009" alignment="left" text="15%" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="kc5-x6-RYQ">
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="bbT-F7-pcE"/>
+                                            <include reference="kc5-x6-RYQ"/>
+                                        </mask>
+                                    </variation>
+                                </group>
                             </items>
                             <variation key="device=watch38mm">
                                 <mask key="items">
                                     <include reference="wJ4-S2-qbg"/>
-                                    <include reference="Ohe-BP-dK1"/>
                                 </mask>
                             </variation>
                         </group>
@@ -109,7 +123,7 @@
                                     <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                                     <variation key="device=watch42mm" title="15%"/>
                                     <connections>
-                                        <action selector="Tip" destination="AgC-eL-Hgc" id="8oN-0Z-6UO"/>
+                                        <action selector="Tip15" destination="AgC-eL-Hgc" id="Dnj-nl-bcf"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" height="1" alignment="center" title="18%" id="C2p-Di-Bgq">
@@ -143,10 +157,10 @@
                     </variation>
                     <variation key="device=watch42mm">
                         <mask key="items">
-                            <include reference="Mrd-ke-sNC"/>
                             <include reference="C8o-aL-cT0"/>
                             <include reference="Crf-kZ-Q1e"/>
                             <include reference="xt7-fX-7oa"/>
+                            <include reference="Mrd-ke-sNC"/>
                             <include reference="jwz-Ts-5Z8"/>
                         </mask>
                     </variation>
@@ -154,13 +168,13 @@
                         <outlet property="amountLabel" destination="9Sj-vp-NsD" id="Oky-yd-sno"/>
                         <outlet property="amountStepper" destination="FTa-En-dU2" id="Riv-Ce-QKe"/>
                         <outlet property="tipAmountLabel" destination="Jda-Vg-8DX" id="0UY-lB-G5P"/>
-                        <outlet property="tipPercentageLabel" destination="Ohe-BP-dK1" id="0vh-J2-CFt"/>
+                        <outlet property="tipPercentageLabel" destination="kc5-x6-RYQ" id="VBW-Vq-iec"/>
                         <outlet property="tipStepper" destination="wJ4-S2-qbg" id="nfx-pv-6S5"/>
                         <outlet property="totalLabel" destination="ziK-aD-w6b" id="co6-YK-hpW"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="544.87179487179492" y="454.64102564102569"/>
+            <point key="canvasLocation" x="544" y="454"/>
         </scene>
     </scenes>
 </document>

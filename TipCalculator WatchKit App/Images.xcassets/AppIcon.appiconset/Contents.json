@@ -4,7 +4,7 @@
       "size" : "24x24",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "Icon-24.png",
+      "filename" : "icon48.png",
       "role" : "notificationCenter",
       "subtype" : "38mm"
     },
@@ -12,14 +12,14 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "Icon-28.png",
+      "filename" : "icon55.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "Icon-29.png",
+      "filename" : "icon58.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
@@ -41,7 +41,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "Icon-Small-50.png",
+      "filename" : "Icon88.png",
       "role" : "longLook",
       "subtype" : "42mm"
     },
@@ -49,7 +49,7 @@
       "size" : "86x86",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "Icon-Small-50-1.png",
+      "filename" : "icon172.png",
       "role" : "quickLook",
       "subtype" : "38mm"
     },
@@ -57,7 +57,7 @@
       "size" : "98x98",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "Icon-Small-50-2.png",
+      "filename" : "icon196.png",
       "role" : "quickLook",
       "subtype" : "42mm"
     }

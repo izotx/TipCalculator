@@ -29,10 +29,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         tipEngine = TipEngine()
-        tipStepper.setValue(Float(self.tipEngine!.tipPercentage))
-        amountStepper.setValue(Float(self.tipEngine!.bill ))
-        // Configure interface objects here.
-
+        self.updateUI()
     
     }
 
@@ -47,7 +44,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func tipStepperChanged(value: Float) {
-       tipEngine!.tipAmount = Double(Int(value))
+       tipEngine!.tipPercentage = Double(Int(value))/100.0
+        
         updateUI()
     }
     @IBAction func tip20() {
@@ -68,10 +66,13 @@ class InterfaceController: WKInterfaceController {
     }
     
     func updateUI(){
-        self.tipAmountLabel.setText("\(TipEngine.getNiceText(tipEngine!.updateTotals().tipPercent * 100  , precision: 0)!)%")
-
+        tipStepper.setValue(Float(self.tipEngine!.tipPercentage * 100))
+        amountStepper.setValue(Float(self.tipEngine!.bill ))
+        
+        self.tipAmountLabel.setText("$\(TipEngine.getNiceText(tipEngine!.updateTotals().tipAmount  , precision: 2)!)")
         self.amountLabel.setText("$\(TipEngine.getNiceText(tipEngine!.bill, precision: 2)!)")
-        self.tipPercentageLabel.setText("\(self.tipEngine!.tipPercentage * 100 )%")
+        self.totalLabel.setText("$\(TipEngine.getNiceText(tipEngine!.total, precision: 2)!)")
+        self.tipPercentageLabel.setText("\(self.tipEngine!.tipPercentage * 100)%")
         
         
 

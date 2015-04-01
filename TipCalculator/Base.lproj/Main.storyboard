@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -51,25 +51,25 @@
                                                             <action selector="button20:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XGa-NN-nOv"/>
                                                         </connections>
                                                     </button>
-                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-mK-x8x">
+                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-mK-x8x">
                                                         <rect key="frame" x="58" y="39" width="484" height="31"/>
                                                         <connections>
                                                             <action selector="billChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="leh-6U-cXj"/>
                                                         </connections>
                                                     </slider>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-gc-VKA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-gc-VKA">
                                                         <rect key="frame" x="60" y="15" width="24" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Hi-Zyr">
+                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Hi-Zyr">
                                                         <rect key="frame" x="59" y="102" width="484" height="31"/>
                                                         <connections>
                                                             <action selector="tipChanged:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5QT-DR-2qG"/>
                                                         </connections>
                                                     </slider>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-AM-fqc">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-AM-fqc">
                                                         <rect key="frame" x="458" y="81" width="82" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="82" id="ZsV-WC-5Kh"/>
@@ -81,13 +81,13 @@
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="nzw-BL-3vC"/>
                                                         </connections>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-OX-GTq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAd-OX-GTq">
                                                         <rect key="frame" x="61" y="81" width="46" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckm-JU-R1s">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckm-JU-R1s">
                                                         <rect key="frame" x="458" y="15" width="82" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="82" id="ho1-Xp-Onr"/>
@@ -132,7 +132,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="Hnw-RQ-vsb" secondAttribute="bottom" id="fN6-bf-P4F"/>
                                                     <constraint firstItem="Hnw-RQ-vsb" firstAttribute="trailing" secondItem="EKr-TQ-n9E" secondAttribute="leading" id="gB8-me-YPz"/>
                                                     <constraint firstItem="fjg-gc-VKA" firstAttribute="leading" secondItem="ZeI-mK-x8x" secondAttribute="leading" id="iiS-ku-Q84"/>
-                                                    <constraint firstItem="Ckm-JU-R1s" firstAttribute="top" secondItem="a9p-26-TKF" secondAttribute="top" constant="30" id="mxL-Vd-o2J"/>
+                                                    <constraint firstItem="Ckm-JU-R1s" firstAttribute="top" secondItem="a9p-26-TKF" secondAttribute="top" constant="15" id="mxL-Vd-o2J"/>
                                                     <constraint firstItem="Hnw-RQ-vsb" firstAttribute="height" secondItem="EKr-TQ-n9E" secondAttribute="height" id="q7i-6Z-S4J"/>
                                                     <constraint firstItem="RAd-OX-GTq" firstAttribute="bottom" secondItem="pMd-Hi-Zyr" secondAttribute="top" id="qiR-6t-k3e"/>
                                                     <constraint firstAttribute="centerX" secondItem="ZeI-mK-x8x" secondAttribute="centerX" id="rgL-tj-gDa"/>

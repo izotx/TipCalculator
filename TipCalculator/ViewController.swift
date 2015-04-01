@@ -62,6 +62,7 @@ class ViewController: UIViewController {
     
     @IBAction func tipChanged(sender: AnyObject) {
         tipEngine.tipPercentage = Double(self.tipSlider.value)
+        
         updateUI()
         
         
@@ -132,6 +133,30 @@ class ViewController: UIViewController {
     {
         if let txt  = self.activeTextField{
             txt.resignFirstResponder()
+            //update sliders 
+
+            
+            
+            if txt == self.billTextField {
+                var bstring = (self.billTextField.text as NSString).substringFromIndex(1)
+                var bill = (bstring as NSString).floatValue
+                self.billSlider.value = bill
+                self.billChanged(self)
+            }
+            if txt == self.tipTextField {
+                var tip = (self.tipTextField.text as NSString).floatValue
+                tip = tip/100.0
+                self.tipSlider.value = tip
+                self.tipChanged(self)
+                println(self.tipSlider.value)
+                
+            }
+            
+
+
+            
+          
+
             
         }
     }
