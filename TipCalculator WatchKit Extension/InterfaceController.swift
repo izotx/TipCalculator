@@ -21,6 +21,26 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var tipPercentageLabel: WKInterfaceLabel!
     
+    
+    //menu buttons
+    
+    @IBAction func eraseContent() {
+        self.tipEngine!.bill = 0
+        self.tipEngine!.tipAmount = 0
+        self.tipEngine!.tipPercentage = 0
+        
+        self.updateUI()
+    }
+    
+    @IBAction func set1Interval() {
+        self.amountStepper.setNumberOfSteps(1000)
+    }
+    
+    @IBAction func set5Interval() {
+        self.amountStepper.setNumberOfSteps(200)
+    }
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
           }
@@ -29,6 +49,21 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         tipEngine = TipEngine()
+        
+        if let te = tipEngine {
+        if let bill = SharedData.getBillData() {
+            self.tipEngine!.bill = bill
+        }
+        
+        if let tip = SharedData.getTipData() {
+            self.tipEngine!.tipAmount = tip
+        }
+        
+        if let tipPerc = SharedData.getTipPercentage() {
+            self.tipEngine!.tipPercentage = tipPerc
+        }
+
+        }
         self.updateUI()
     
     }
@@ -73,6 +108,12 @@ class InterfaceController: WKInterfaceController {
         self.amountLabel.setText("$\(TipEngine.getNiceText(tipEngine!.bill, precision: 2)!)")
         self.totalLabel.setText("$\(TipEngine.getNiceText(tipEngine!.total, precision: 2)!)")
         self.tipPercentageLabel.setText("\(self.tipEngine!.tipPercentage * 100)%")
+        
+        if let te = self.tipEngine {
+            SharedData.saveBillData(te.bill)
+            SharedData.saveTipData(te.tipAmount)
+            SharedData.saveTipPercentage(te.tipPercentage)
+        }
         
         
 

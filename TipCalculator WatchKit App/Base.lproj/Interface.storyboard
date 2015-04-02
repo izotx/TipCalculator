@@ -8,7 +8,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TipCalculator_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="tipCalculator_WatchKit_Extension">
                     <items>
                         <separator alignment="left" id="C8o-aL-cT0"/>
                         <group width="1" height="0.34999999999999998" alignment="left" layout="vertical" id="Crf-kZ-Q1e">
@@ -150,6 +150,25 @@
                             </variation>
                         </group>
                     </items>
+                    <menu key="menu" id="Krl-LE-n6j">
+                        <items>
+                            <menuItem title="Erase" icon="trash" id="Qac-nC-iQx">
+                                <connections>
+                                    <action selector="eraseContent" destination="AgC-eL-Hgc" id="9Ka-RI-U1n"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="1" image="Menu1IconSmall.png" id="6Cm-X4-i2Z">
+                                <connections>
+                                    <action selector="set1Interval" destination="AgC-eL-Hgc" id="6QL-Hb-j5f"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="5" image="Menu5IconSmall.png" id="6Tc-VN-79D">
+                                <connections>
+                                    <action selector="set5Interval" destination="AgC-eL-Hgc" id="LYm-Nk-akH"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <variation key="device=watch38mm">
                         <mask key="items">
                             <include reference="gkr-bo-3kF"/>
@@ -174,7 +193,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="544" y="454"/>
+            <point key="canvasLocation" x="836" y="329"/>
         </scene>
     </scenes>
 </document>

@@ -13,11 +13,7 @@ class CustomButton:UIButton{
         super.awakeFromNib()
         self.layer.borderColor = UIColor.lightGrayColor().CGColor!
         self.layer.borderWidth = 1
-        
-        
     }
-    
-    
 }
 
 class ViewController: UIViewController {
@@ -25,54 +21,69 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipTextField: UITextField!
     @IBOutlet weak var billTextField: UITextField!
-    
     @IBOutlet weak var tipWidget: TipView!
     @IBOutlet weak var tipSlider: UISlider!
     @IBOutlet weak var billSlider: UISlider!
     var activeTextField:UITextField?
     var tipEngine = TipEngine()
     
+    
+    
     @IBOutlet weak var widgetView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         updateUI()
-        
         self.widgetView.layer.borderColor = UIColor.whiteColor().CGColor!
         self.widgetView.layer.borderWidth = 1
+    }
+
+    override  func viewWillAppear(animated: Bool){
+            super.viewWillAppear(animated)
+            //check for share defualts
+         self.registerForKeyboardNotifications()
+        
+        if let bill = SharedData.getBillData() {
+            self.tipEngine.bill = bill
+        }
+        
+        if let tip = SharedData.getTipData() {
+            self.tipEngine.tipAmount = tip
+        }
+        
+        if let tipPerc = SharedData.getTipPercentage() {
+            self.tipEngine.tipPercentage = tipPerc
+        }
+        
     }
 
     
     
     func updateUI(){
-        
-//        var tipText = String(format: "%.0f%%", tipEngine.updateTotals().tipPercent);
-//        var billText = String(format: "$%.0f", tipEngine.bill);
-        
         self.tipTextField.text = "\(TipEngine.getNiceText(tipEngine.updateTotals().tipPercent * 100  , precision: 0)!)%"
-        
         self.billTextField.text = "$\(TipEngine.getNiceText(tipEngine.bill, precision: 2)!)"
  
         self.tipWidget.tipEngine = tipEngine
         self.tipSlider.value = Float(tipEngine.tipPercentage)
         self.billSlider.value = Float(tipEngine.bill)
+        
+        //save data
+        SharedData.saveBillData(self.tipEngine.bill)
+        SharedData.saveTipData(self.tipEngine.tipAmount)
+        SharedData.saveTipPercentage(self.tipEngine.tipPercentage)
+        
     }
     
     
     @IBAction func tipChanged(sender: AnyObject) {
         tipEngine.tipPercentage = Double(self.tipSlider.value)
-        
         updateUI()
-        
-        
     }
    
     @IBAction func billChanged(sender: AnyObject) {
-
         tipEngine.bill = Double(self.billSlider.value)
         updateUI()
-
     }
 
     @IBAction func button20(sender: AnyObject) {
@@ -134,8 +145,6 @@ class ViewController: UIViewController {
         if let txt  = self.activeTextField{
             txt.resignFirstResponder()
             //update sliders 
-
-            
             
             if txt == self.billTextField {
                 var bstring = (self.billTextField.text as NSString).substringFromIndex(1)
@@ -151,13 +160,6 @@ class ViewController: UIViewController {
                 println(self.tipSlider.value)
                 
             }
-            
-
-
-            
-          
-
-            
         }
     }
 
@@ -200,12 +202,7 @@ class ViewController: UIViewController {
         scrollView.scrollEnabled = false
     }
     
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.registerForKeyboardNotifications()
-    }
-    
+
     override func viewDidDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)

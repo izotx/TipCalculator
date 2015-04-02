@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "242DB4551A99761D000CC644"
                BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-               BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+               BlueprintName = "tipCalculatorWatchKitApp"
                ReferencedContainer = "container:tipCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "242DB44B1A99761C000CC644"
-               BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit Extension.appex"
-               BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit Extension"
+               BuildableName = "tipCalculator.WatchKit Extension.appex"
+               BlueprintName = "tipCalculatorWatchKitExtension"
                ReferencedContainer = "container:tipCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "242DB4221A9975FF000CC644"
-               BuildableName = "tipCalculator.temp_caseinsensitive_rename.app"
-               BlueprintName = "tipCalculator.temp_caseinsensitive_rename"
+               BuildableName = "tipCalculator.app"
+               BlueprintName = "tipCalculator"
                ReferencedContainer = "container:tipCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "242DB4551A99761D000CC644"
             BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-            BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+            BlueprintName = "tipCalculatorWatchKitApp"
             ReferencedContainer = "container:tipCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,12 +79,12 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.springboard"
-         RemotePath = "/TipCalculator">
+         RemotePath = "/(null)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "242DB4551A99761D000CC644"
             BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-            BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+            BlueprintName = "tipCalculatorWatchKitApp"
             ReferencedContainer = "container:tipCalculator.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -93,7 +93,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "242DB4551A99761D000CC644"
             BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-            BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+            BlueprintName = "tipCalculatorWatchKitApp"
             ReferencedContainer = "container:tipCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -109,12 +109,12 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.springboard"
-         RemotePath = "/TipCalculator">
+         RemotePath = "/(null)">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "242DB4551A99761D000CC644"
             BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-            BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+            BlueprintName = "tipCalculatorWatchKitApp"
             ReferencedContainer = "container:tipCalculator.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -123,7 +123,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "242DB4551A99761D000CC644"
             BuildableName = "tipCalculator.temp_caseinsensitive_rename WatchKit App.app"
-            BlueprintName = "tipCalculator.temp_caseinsensitive_rename WatchKit App"
+            BlueprintName = "tipCalculatorWatchKitApp"
             ReferencedContainer = "container:tipCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
