@@ -23,6 +23,8 @@
 		24BEC8781ABE88D700148325 /* TipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46E1A9C0EB0000CC644 /* TipEngine.swift */; };
 		40D147EB1ACDC2620042C642 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D147EA1ACDC2620042C642 /* SharedData.swift */; };
 		40D147EC1ACDC2670042C642 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D147EA1ACDC2620042C642 /* SharedData.swift */; };
+		40EE9CF91ACEE986000969DE /* Menu1Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */; };
+		40EE9CFC1ACEED8B000969DE /* Menu5Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		40D147E81ACC906D0042C642 /* TipCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TipCalculator.entitlements; sourceTree = "<group>"; };
 		40D147E91ACDC13C0042C642 /* tipCalculatorWatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tipCalculatorWatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		40D147EA1ACDC2620042C642 /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu1Icon@2x.png"; sourceTree = "<group>"; };
+		40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu5Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 		242DB45A1A99761D000CC644 /* TipCalculator WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */,
+				40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */,
 				242DB45D1A99761D000CC644 /* Interface.storyboard */,
 				242DB4601A99761D000CC644 /* Images.xcassets */,
 				242DB45B1A99761D000CC644 /* Supporting Files */,
@@ -332,6 +338,8 @@
 			files = (
 				242DB45F1A99761D000CC644 /* Interface.storyboard in Resources */,
 				242DB4611A99761D000CC644 /* Images.xcassets in Resources */,
+				40EE9CFC1ACEED8B000969DE /* Menu5Icon@2x.png in Resources */,
+				40EE9CF91ACEE986000969DE /* Menu1Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,15 +10,14 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="tipCalculator_WatchKit_Extension">
                     <items>
-                        <separator alignment="left" id="C8o-aL-cT0"/>
-                        <group width="1" height="0.34999999999999998" alignment="left" layout="vertical" id="Crf-kZ-Q1e">
+                        <group width="1" height="0.40000000000000002" alignment="left" layout="vertical" id="Crf-kZ-Q1e">
                             <items>
-                                <group width="1" height="0.40000000000000013" alignment="left" id="WtG-YC-kgZ">
+                                <group width="1" height="0.20000000000000015" alignment="left" id="WtG-YC-kgZ">
                                     <items>
-                                        <label width="0.50000000000000011" height="1" alignment="left" text="Tip" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="lBl-IO-oiA">
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="Tip" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="lBl-IO-oiA">
                                             <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
-                                        <label width="0.50000000000000011" alignment="left" text="Total" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="ldh-4p-gQ9">
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="Total" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="ldh-4p-gQ9">
                                             <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
                                     </items>
@@ -29,15 +28,15 @@
                                         </mask>
                                     </variation>
                                 </group>
-                                <group width="1" height="0.60000000000000009" alignment="left" id="7yw-jd-hD9">
+                                <group width="1" height="0.30000000000000016" alignment="left" id="7yw-jd-hD9">
                                     <items>
-                                        <label width="0.50000000000000011" height="1" alignment="center" verticalAlignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="Jda-Vg-8DX">
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="Jda-Vg-8DX">
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
                                         </label>
-                                        <label width="0.50000000000000011" height="1" alignment="center" verticalAlignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="ziK-aD-w6b">
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="ziK-aD-w6b">
                                             <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
                                         </label>
                                     </items>
                                     <variation key="device=watch42mm">
@@ -55,8 +54,7 @@
                                 </mask>
                             </variation>
                         </group>
-                        <separator alignment="left" id="xt7-fX-7oa"/>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="Mrd-ke-sNC">
+                        <group width="1" height="0.17999999999999999" alignment="left" id="Mrd-ke-sNC">
                             <items>
                                 <slider width="0.60000000000000009" height="1" alignment="left" continuous="YES" value="10" minimum="1" maximum="1000" steps="1000" id="FTa-En-dU2">
                                     <connections>
@@ -69,7 +67,7 @@
                                             <fontDescription key="font" type="system" pointSize="10"/>
                                         </label>
                                         <label width="1" height="0.60000000000000009" alignment="left" text="$10.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="9Sj-vp-NsD">
-                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
                                     </items>
                                     <variation key="device=watch42mm">
@@ -87,7 +85,7 @@
                                 </mask>
                             </variation>
                         </group>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="gkr-bo-3kF">
+                        <group width="1" height="0.17999999999999999" alignment="left" id="gkr-bo-3kF">
                             <items>
                                 <slider width="0.59999999999999998" height="1" alignment="left" continuous="YES" value="15" maximum="100" steps="100" id="wJ4-S2-qbg">
                                     <connections>
@@ -100,7 +98,7 @@
                                             <fontDescription key="font" type="system" pointSize="10"/>
                                         </label>
                                         <label width="1" height="0.60000000000000009" alignment="left" text="15%" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="kc5-x6-RYQ">
-                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
                                         </label>
                                     </items>
                                     <variation key="device=watch42mm">
@@ -117,7 +115,7 @@
                                 </mask>
                             </variation>
                         </group>
-                        <group width="1" height="0.20000000000000015" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="jwz-Ts-5Z8">
+                        <group width="1" height="0.17999999999999999" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="jwz-Ts-5Z8">
                             <items>
                                 <button width="0.33000000000000002" height="1" alignment="center" title="15%" id="2gL-1A-QlD">
                                     <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
@@ -157,12 +155,12 @@
                                     <action selector="eraseContent" destination="AgC-eL-Hgc" id="9Ka-RI-U1n"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="1" image="Menu1IconSmall.png" id="6Cm-X4-i2Z">
+                            <menuItem title="1" image="Menu1Icon.png" id="6Cm-X4-i2Z">
                                 <connections>
                                     <action selector="set1Interval" destination="AgC-eL-Hgc" id="6QL-Hb-j5f"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="5" image="Menu5IconSmall.png" id="6Tc-VN-79D">
+                            <menuItem title="5" image="Menu5Icon.png" id="6Tc-VN-79D">
                                 <connections>
                                     <action selector="set5Interval" destination="AgC-eL-Hgc" id="LYm-Nk-akH"/>
                                 </connections>
@@ -176,9 +174,7 @@
                     </variation>
                     <variation key="device=watch42mm">
                         <mask key="items">
-                            <include reference="C8o-aL-cT0"/>
                             <include reference="Crf-kZ-Q1e"/>
-                            <include reference="xt7-fX-7oa"/>
                             <include reference="Mrd-ke-sNC"/>
                             <include reference="jwz-Ts-5Z8"/>
                         </mask>
@@ -193,7 +189,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="836" y="329"/>
+            <point key="canvasLocation" x="767" y="575"/>
         </scene>
     </scenes>
 </document>
