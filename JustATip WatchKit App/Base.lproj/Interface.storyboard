@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Obg-dm-LhC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="yla-Mt-gQe">
+            <objects>
+                <controller id="Obg-dm-LhC" customClass="InterfaceController" customModule="JustATip_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.30000000000000004" alignment="left" layout="vertical" id="9gv-tE-PJl">
+                            <items>
+                                <group width="1" height="0.30000000000000016" alignment="left" id="QUd-Yg-LfC">
+                                    <items>
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="Tip" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="NuZ-V2-Snj">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="Total" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="ORN-BN-eDD">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="NuZ-V2-Snj"/>
+                                            <include reference="ORN-BN-eDD"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" height="0.50000000000000011" alignment="left" id="RuM-fr-7B7">
+                                    <items>
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="3Av-uE-fcu">
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                        <label width="0.50000000000000011" height="1" alignment="center" text="$0.0" textAlignment="center" minimumScaleFactor="0.60000000000000009" id="hbV-07-mWU">
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="3Av-uE-fcu"/>
+                                            <include reference="hbV-07-mWU"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="QUd-Yg-LfC"/>
+                                    <include reference="RuM-fr-7B7"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" id="NTH-36-Jwa">
+                            <items>
+                                <slider width="0.60000000000000009" height="1" alignment="left" continuous="YES" value="10" minimum="1" maximum="1000" steps="1000" id="sR0-Yv-ygS">
+                                    <connections>
+                                        <action selector="billStepperChanged:" destination="Obg-dm-LhC" id="ibo-qq-IOf"/>
+                                    </connections>
+                                </slider>
+                                <group width="0.40000000000000013" alignment="left" layout="vertical" id="rb9-Oj-6Zd">
+                                    <items>
+                                        <label width="1" height="0.40000000000000013" alignment="left" text="Bill" textAlignment="center" id="eP5-g8-Yxu">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="0.60000000000000009" alignment="left" text="$10.0" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="elj-2Q-TYP">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="eP5-g8-Yxu"/>
+                                            <include reference="elj-2Q-TYP"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="sR0-Yv-ygS"/>
+                                    <include reference="rb9-Oj-6Zd"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" id="R3q-Nf-BK0">
+                            <items>
+                                <slider width="0.59999999999999998" height="1" alignment="left" continuous="YES" value="15" maximum="100" steps="100" id="VQs-2Q-JZk">
+                                    <connections>
+                                        <action selector="tipStepperChanged:" destination="Obg-dm-LhC" id="TMh-hC-1WK"/>
+                                    </connections>
+                                </slider>
+                                <group width="0.40000000000000013" alignment="left" layout="vertical" id="zB6-L4-xTU">
+                                    <items>
+                                        <label width="1" height="0.40000000000000013" alignment="left" text="Tip%" textAlignment="center" id="2fD-Vc-RA3">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" height="0.60000000000000009" alignment="left" text="15%" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="SHd-2X-zUQ">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="2fD-Vc-RA3"/>
+                                            <include reference="SHd-2X-zUQ"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="VQs-2Q-JZk"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" height="0.17999999999999999" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="2qD-Gm-cAT">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="center" title="15%" id="u2l-P7-PFj">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" title="15%"/>
+                                    <connections>
+                                        <action selector="Tip15" destination="Obg-dm-LhC" id="8zA-l8-CU3"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="center" title="18%" id="ayz-rS-fVG">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" title="18%"/>
+                                    <connections>
+                                        <action selector="tip18" destination="Obg-dm-LhC" id="TKv-cQ-UBh"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="center" title="20%" id="07U-7V-80z">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" title="20%"/>
+                                    <connections>
+                                        <action selector="tip20" destination="Obg-dm-LhC" id="wg5-rs-vdJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="u2l-P7-PFj"/>
+                                    <include reference="ayz-rS-fVG"/>
+                                    <include reference="07U-7V-80z"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <menu key="menu" id="Mcc-Bk-lXS">
+                        <items>
+                            <menuItem title="Erase" icon="trash" id="jnV-n4-vin">
+                                <connections>
+                                    <action selector="eraseContent" destination="Obg-dm-LhC" id="7Ta-l0-7VI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="+/-$1" image="Menu1Icon.png" id="3wH-dz-oSb">
+                                <connections>
+                                    <action selector="set1Interval" destination="Obg-dm-LhC" id="NMB-q7-yAq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="+/-$5" image="Menu5Icon.png" id="GcQ-wW-mSz">
+                                <connections>
+                                    <action selector="set5Interval" destination="Obg-dm-LhC" id="ZMv-bJ-cgA"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="R3q-Nf-BK0"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="9gv-tE-PJl"/>
+                            <include reference="NTH-36-Jwa"/>
+                            <include reference="2qD-Gm-cAT"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="amountLabel" destination="elj-2Q-TYP" id="m1Y-DJ-d1x"/>
+                        <outlet property="amountStepper" destination="sR0-Yv-ygS" id="l5R-YI-iB4"/>
+                        <outlet property="tipAmountLabel" destination="3Av-uE-fcu" id="oXS-wQ-pz8"/>
+                        <outlet property="tipPercentageLabel" destination="SHd-2X-zUQ" id="nbb-Jd-tdP"/>
+                        <outlet property="tipStepper" destination="VQs-2Q-JZk" id="wzH-mp-xcc"/>
+                        <outlet property="totalLabel" destination="hbV-07-mWU" id="fFb-pq-xIo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="474" y="527"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		242DB4291A9975FF000CC644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB4281A9975FF000CC644 /* AppDelegate.swift */; };
+		242DB42B1A9975FF000CC644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB42A1A9975FF000CC644 /* ViewController.swift */; };
+		242DB42E1A9975FF000CC644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242DB42C1A9975FF000CC644 /* Main.storyboard */; };
+		242DB4331A9975FF000CC644 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242DB4311A9975FF000CC644 /* LaunchScreen.xib */; };
+		242DB46D1A9AE514000CC644 /* Stylekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46C1A9AE514000CC644 /* Stylekit.swift */; };
+		242DB46F1A9C0EB0000CC644 /* TipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46E1A9C0EB0000CC644 /* TipEngine.swift */; };
+		24BEC8771ABC3A5C00148325 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BEC8761ABC3A5C00148325 /* Images.xcassets */; };
+		404936581AD2C8FE0016FDF7 /* Menu1Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */; };
+		404936591AD2C8FF0016FDF7 /* Menu1Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */; };
+		4049365A1AD2C9010016FDF7 /* Menu1Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */; };
+		4049365B1AD2C9050016FDF7 /* Menu5Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */; };
+		4049365C1AD2C9060016FDF7 /* Menu5Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */; };
+		4049365D1AD2C9060016FDF7 /* Menu5Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */; };
+		4052C95C1AD2DE6500162B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242DB4601A99761D000CC644 /* Images.xcassets */; };
+		4052C95D1AD2DE6600162B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242DB4601A99761D000CC644 /* Images.xcassets */; };
+		4052C95E1AD2DE6900162B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242DB4601A99761D000CC644 /* Images.xcassets */; };
+		4052C95F1AD2DEE300162B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242DB4521A99761C000CC644 /* Images.xcassets */; };
+		40D147EB1ACDC2620042C642 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D147EA1ACDC2620042C642 /* SharedData.swift */; };
+		40EE9D061AD2C567000969DE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE9D051AD2C567000969DE /* InterfaceController.swift */; };
+		40EE9D081AD2C567000969DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9D071AD2C567000969DE /* Images.xcassets */; };
+		40EE9D0C1AD2C567000969DE /* JustATip WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9D0B1AD2C567000969DE /* JustATip WatchKit App.app */; };
+		40EE9D141AD2C567000969DE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9D121AD2C567000969DE /* Interface.storyboard */; };
+		40EE9D161AD2C567000969DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EE9D151AD2C567000969DE /* Images.xcassets */; };
+		40EE9D191AD2C567000969DE /* JustATip WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40EE9D011AD2C567000969DE /* JustATip WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40EE9D211AD2C5E9000969DE /* TipEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DB46E1A9C0EB0000CC644 /* TipEngine.swift */; };
+		40EE9D221AD2C5F5000969DE /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D147EA1ACDC2620042C642 /* SharedData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40EE9D0D1AD2C567000969DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 242DB41B1A9975FE000CC644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EE9D0A1AD2C567000969DE;
+			remoteInfo = "JustATip WatchKit App";
+		};
+		40EE9D171AD2C567000969DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 242DB41B1A9975FE000CC644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EE9D001AD2C567000969DE;
+			remoteInfo = "JustATip WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		242DB46B1A99761D000CC644 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40EE9D191AD2C567000969DE /* JustATip WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		242DB4231A9975FF000CC644 /* tipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		242DB4271A9975FF000CC644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242DB4281A9975FF000CC644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		242DB42A1A9975FF000CC644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		242DB42D1A9975FF000CC644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		242DB4321A9975FF000CC644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		242DB44F1A99761C000CC644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242DB4501A99761C000CC644 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		242DB4521A99761C000CC644 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../TipCalculator WatchKit Extension/Images.xcassets"; sourceTree = "<group>"; };
+		242DB45C1A99761D000CC644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242DB45E1A99761D000CC644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		242DB4601A99761D000CC644 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../TipCalculator WatchKit App/Images.xcassets"; sourceTree = "<group>"; };
+		242DB46C1A9AE514000CC644 /* Stylekit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylekit.swift; sourceTree = "<group>"; };
+		242DB46E1A9C0EB0000CC644 /* TipEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipEngine.swift; sourceTree = "<group>"; };
+		24BEC8761ABC3A5C00148325 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4052C9601AD2DF1500162B6C /* JustATip WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "JustATip WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		40D147E81ACC906D0042C642 /* TipCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TipCalculator.entitlements; sourceTree = "<group>"; };
+		40D147E91ACDC13C0042C642 /* tipCalculatorWatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tipCalculatorWatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		40D147EA1ACDC2620042C642 /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu1Icon@2x.png"; path = "../TipCalculator WatchKit App/Menu1Icon@2x.png"; sourceTree = "<group>"; };
+		40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu5Icon@2x.png"; path = "../TipCalculator WatchKit App/Menu5Icon@2x.png"; sourceTree = "<group>"; };
+		40EE9D011AD2C567000969DE /* JustATip WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JustATip WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE9D041AD2C567000969DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EE9D051AD2C567000969DE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		40EE9D071AD2C567000969DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40EE9D0B1AD2C567000969DE /* JustATip WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JustATip WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EE9D111AD2C567000969DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EE9D131AD2C567000969DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		40EE9D151AD2C567000969DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		242DB4201A9975FF000CC644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE9CFE1AD2C567000969DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		242DB41A1A9975FE000CC644 = {
+			isa = PBXGroup;
+			children = (
+				40D147E91ACDC13C0042C642 /* tipCalculatorWatchKit Extension.entitlements */,
+				242DB4251A9975FF000CC644 /* TipCalculator */,
+				242DB44D1A99761C000CC644 /* TipCalculator WatchKit Extension */,
+				242DB45A1A99761D000CC644 /* TipCalculator WatchKit App */,
+				40EE9D021AD2C567000969DE /* JustATip WatchKit Extension */,
+				40EE9D0F1AD2C567000969DE /* JustATip WatchKit App */,
+				242DB4241A9975FF000CC644 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		242DB4241A9975FF000CC644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				242DB4231A9975FF000CC644 /* tipCalculator.app */,
+				40EE9D011AD2C567000969DE /* JustATip WatchKit Extension.appex */,
+				40EE9D0B1AD2C567000969DE /* JustATip WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		242DB4251A9975FF000CC644 /* TipCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				40D147E81ACC906D0042C642 /* TipCalculator.entitlements */,
+				242DB4281A9975FF000CC644 /* AppDelegate.swift */,
+				242DB42A1A9975FF000CC644 /* ViewController.swift */,
+				40D147EA1ACDC2620042C642 /* SharedData.swift */,
+				242DB46E1A9C0EB0000CC644 /* TipEngine.swift */,
+				242DB42C1A9975FF000CC644 /* Main.storyboard */,
+				242DB46C1A9AE514000CC644 /* Stylekit.swift */,
+				242DB4311A9975FF000CC644 /* LaunchScreen.xib */,
+				24BEC8761ABC3A5C00148325 /* Images.xcassets */,
+				242DB4261A9975FF000CC644 /* Supporting Files */,
+			);
+			path = TipCalculator;
+			sourceTree = "<group>";
+		};
+		242DB4261A9975FF000CC644 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				242DB4271A9975FF000CC644 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		242DB44D1A99761C000CC644 /* TipCalculator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				242DB4501A99761C000CC644 /* InterfaceController.swift */,
+				242DB44E1A99761C000CC644 /* Supporting Files */,
+			);
+			path = "TipCalculator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		242DB44E1A99761C000CC644 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				242DB44F1A99761C000CC644 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		242DB45A1A99761D000CC644 /* TipCalculator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				242DB45D1A99761D000CC644 /* Interface.storyboard */,
+				242DB45B1A99761D000CC644 /* Supporting Files */,
+			);
+			path = "TipCalculator WatchKit App";
+			sourceTree = "<group>";
+		};
+		242DB45B1A99761D000CC644 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				242DB45C1A99761D000CC644 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40EE9D021AD2C567000969DE /* JustATip WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4052C9601AD2DF1500162B6C /* JustATip WatchKit Extension.entitlements */,
+				40EE9D051AD2C567000969DE /* InterfaceController.swift */,
+				242DB4521A99761C000CC644 /* Images.xcassets */,
+				40EE9D071AD2C567000969DE /* Images.xcassets */,
+				40EE9D031AD2C567000969DE /* Supporting Files */,
+			);
+			path = "JustATip WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		40EE9D031AD2C567000969DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EE9D041AD2C567000969DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40EE9D0F1AD2C567000969DE /* JustATip WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				40EE9CF71ACEE986000969DE /* Menu1Icon@2x.png */,
+				40EE9CFB1ACEED8B000969DE /* Menu5Icon@2x.png */,
+				40EE9D121AD2C567000969DE /* Interface.storyboard */,
+				242DB4601A99761D000CC644 /* Images.xcassets */,
+				40EE9D151AD2C567000969DE /* Images.xcassets */,
+				40EE9D101AD2C567000969DE /* Supporting Files */,
+			);
+			path = "JustATip WatchKit App";
+			sourceTree = "<group>";
+		};
+		40EE9D101AD2C567000969DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EE9D111AD2C567000969DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		242DB4221A9975FF000CC644 /* tipCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 242DB4421A9975FF000CC644 /* Build configuration list for PBXNativeTarget "tipCalculator" */;
+			buildPhases = (
+				242DB41F1A9975FF000CC644 /* Sources */,
+				242DB4201A9975FF000CC644 /* Frameworks */,
+				242DB4211A9975FF000CC644 /* Resources */,
+				242DB46B1A99761D000CC644 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40EE9D181AD2C567000969DE /* PBXTargetDependency */,
+			);
+			name = tipCalculator;
+			productName = TipCalculator;
+			productReference = 242DB4231A9975FF000CC644 /* tipCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40EE9D001AD2C567000969DE /* JustATip WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE9D1D1AD2C567000969DE /* Build configuration list for PBXNativeTarget "JustATip WatchKit Extension" */;
+			buildPhases = (
+				40EE9CFD1AD2C567000969DE /* Sources */,
+				40EE9CFE1AD2C567000969DE /* Frameworks */,
+				40EE9CFF1AD2C567000969DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40EE9D0E1AD2C567000969DE /* PBXTargetDependency */,
+			);
+			name = "JustATip WatchKit Extension";
+			productName = "JustATip WatchKit Extension";
+			productReference = 40EE9D011AD2C567000969DE /* JustATip WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		40EE9D0A1AD2C567000969DE /* JustATip WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40EE9D1A1AD2C567000969DE /* Build configuration list for PBXNativeTarget "JustATip WatchKit App" */;
+			buildPhases = (
+				40EE9D091AD2C567000969DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JustATip WatchKit App";
+			productName = "JustATip WatchKit App";
+			productReference = 40EE9D0B1AD2C567000969DE /* JustATip WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		242DB41B1A9975FE000CC644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Janusz Chudzynski";
+				TargetAttributes = {
+					242DB4221A9975FF000CC644 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 8KV53E363M;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					40EE9D001AD2C567000969DE = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8KV53E363M;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					40EE9D0A1AD2C567000969DE = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8KV53E363M;
+					};
+				};
+			};
+			buildConfigurationList = 242DB41E1A9975FE000CC644 /* Build configuration list for PBXProject "TipCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 242DB41A1A9975FE000CC644;
+			productRefGroup = 242DB4241A9975FF000CC644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				242DB4221A9975FF000CC644 /* tipCalculator */,
+				40EE9D001AD2C567000969DE /* JustATip WatchKit Extension */,
+				40EE9D0A1AD2C567000969DE /* JustATip WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		242DB4211A9975FF000CC644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4049365A1AD2C9010016FDF7 /* Menu1Icon@2x.png in Resources */,
+				242DB42E1A9975FF000CC644 /* Main.storyboard in Resources */,
+				4049365D1AD2C9060016FDF7 /* Menu5Icon@2x.png in Resources */,
+				4052C95E1AD2DE6900162B6C /* Images.xcassets in Resources */,
+				242DB4331A9975FF000CC644 /* LaunchScreen.xib in Resources */,
+				24BEC8771ABC3A5C00148325 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE9CFF1AD2C567000969DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4049365B1AD2C9050016FDF7 /* Menu5Icon@2x.png in Resources */,
+				4052C95C1AD2DE6500162B6C /* Images.xcassets in Resources */,
+				40EE9D0C1AD2C567000969DE /* JustATip WatchKit App.app in Resources */,
+				4052C95F1AD2DEE300162B6C /* Images.xcassets in Resources */,
+				404936591AD2C8FF0016FDF7 /* Menu1Icon@2x.png in Resources */,
+				40EE9D081AD2C567000969DE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE9D091AD2C567000969DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4049365C1AD2C9060016FDF7 /* Menu5Icon@2x.png in Resources */,
+				4052C95D1AD2DE6600162B6C /* Images.xcassets in Resources */,
+				40EE9D141AD2C567000969DE /* Interface.storyboard in Resources */,
+				404936581AD2C8FE0016FDF7 /* Menu1Icon@2x.png in Resources */,
+				40EE9D161AD2C567000969DE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		242DB41F1A9975FF000CC644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242DB46D1A9AE514000CC644 /* Stylekit.swift in Sources */,
+				242DB46F1A9C0EB0000CC644 /* TipEngine.swift in Sources */,
+				242DB42B1A9975FF000CC644 /* ViewController.swift in Sources */,
+				40D147EB1ACDC2620042C642 /* SharedData.swift in Sources */,
+				242DB4291A9975FF000CC644 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40EE9CFD1AD2C567000969DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE9D221AD2C5F5000969DE /* SharedData.swift in Sources */,
+				40EE9D061AD2C567000969DE /* InterfaceController.swift in Sources */,
+				40EE9D211AD2C5E9000969DE /* TipEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40EE9D0E1AD2C567000969DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EE9D0A1AD2C567000969DE /* JustATip WatchKit App */;
+			targetProxy = 40EE9D0D1AD2C567000969DE /* PBXContainerItemProxy */;
+		};
+		40EE9D181AD2C567000969DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40EE9D001AD2C567000969DE /* JustATip WatchKit Extension */;
+			targetProxy = 40EE9D171AD2C567000969DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		242DB42C1A9975FF000CC644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242DB42D1A9975FF000CC644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		242DB4311A9975FF000CC644 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242DB4321A9975FF000CC644 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		242DB45D1A99761D000CC644 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242DB45E1A99761D000CC644 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		40EE9D121AD2C567000969DE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EE9D131AD2C567000969DE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		242DB4401A9975FF000CC644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		242DB4411A9975FF000CC644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		242DB4431A9975FF000CC644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = TipCalculator/TipCalculator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = tipCalculator;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		242DB4441A9975FF000CC644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = TipCalculator/TipCalculator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = tipCalculator;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		40EE9D1B1AD2C567000969DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = JustATip_WatchKit_Extension;
+				INFOPLIST_FILE = "JustATip WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		40EE9D1C1AD2C567000969DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = JustATip_WatchKit_Extension;
+				INFOPLIST_FILE = "JustATip WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		40EE9D1E1AD2C567000969DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "JustATip WatchKit Extension/JustATip WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JustATip WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "b8fc312d-3b30-4092-b450-2bace03de439";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		40EE9D1F1AD2C567000969DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "JustATip WatchKit Extension/JustATip WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Janusz Chudzynski (8KV53E363M)";
+				INFOPLIST_FILE = "JustATip WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "b8fc312d-3b30-4092-b450-2bace03de439";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		242DB41E1A9975FE000CC644 /* Build configuration list for PBXProject "TipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242DB4401A9975FF000CC644 /* Debug */,
+				242DB4411A9975FF000CC644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		242DB4421A9975FF000CC644 /* Build configuration list for PBXNativeTarget "tipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242DB4431A9975FF000CC644 /* Debug */,
+				242DB4441A9975FF000CC644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE9D1A1AD2C567000969DE /* Build configuration list for PBXNativeTarget "JustATip WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE9D1B1AD2C567000969DE /* Debug */,
+				40EE9D1C1AD2C567000969DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40EE9D1D1AD2C567000969DE /* Build configuration list for PBXNativeTarget "JustATip WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40EE9D1E1AD2C567000969DE /* Debug */,
+				40EE9D1F1AD2C567000969DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 242DB41B1A9975FE000CC644 /* Project object */;
+}
