@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "242DB4221A9975FF000CC644"
-               BuildableName = "TipCalculator.app"
-               BlueprintName = "TipCalculator"
+               BuildableName = "tipCalculator.app"
+               BlueprintName = "tipCalculator"
                ReferencedContainer = "container:TipCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
