@@ -74,11 +74,20 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func billStepperChanged(value: Float) {
-        tipEngine!.bill = Double(Int(value))
+        if tipEngine!.bill < Double(value)
+        {
+            tipEngine!.bill = Double(ceil(value))
+        }
+        else{
+           tipEngine!.bill = Double(floor(value))
+        }
+
+
         updateUI()
     }
     
     @IBAction func tipStepperChanged(value: Float) {
+        
         tipEngine!.tipPercentage = Double(Int(value))/100.0
         
         updateUI()
