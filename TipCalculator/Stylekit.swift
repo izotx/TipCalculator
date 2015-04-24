@@ -146,7 +146,7 @@ public class SpeedometerStyleKit : NSObject {
         
         //// tipPlaceholder Drawing
         let tipPlaceholderRect = CGRectMake(view_container.minX + floor(view_container.width * 0.06500 + 0.5), view_container.minY + floor(view_container.height * 0.30500 + 0.5), floor(view_container.width * 0.92000 + 0.5) - floor(view_container.width * 0.06500 + 0.5), floor(view_container.height * 0.50000 + 0.5) - floor(view_container.height * 0.30500 + 0.5))
-        let tipPlaceholderStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        let tipPlaceholderStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         tipPlaceholderStyle.alignment = NSTextAlignment.Center
         
         let tipPlaceholderFontAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: topLabelFontSize)!, NSForegroundColorAttributeName: gradientColor4, NSParagraphStyleAttributeName: tipPlaceholderStyle]
@@ -157,7 +157,7 @@ public class SpeedometerStyleKit : NSObject {
         //// tipLabel Drawing
         let tipLabelRect = CGRectMake(view_container.minX + floor(view_container.width * 0.28500 + 0.5), view_container.minY + floor(view_container.height * 0.18500 + 0.5), floor(view_container.width * 0.71500 + 0.5) - floor(view_container.width * 0.28500 + 0.5), floor(view_container.height * 0.30500 + 0.5) - floor(view_container.height * 0.18500 + 0.5))
         var tipLabelTextContent = NSString(string: "Tip")
-        let tipLabelStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        let tipLabelStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         tipLabelStyle.alignment = NSTextAlignment.Center
         
         let tipLabelFontAttributes = [NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 17)!, NSForegroundColorAttributeName: gradientColor4, NSParagraphStyleAttributeName: tipLabelStyle]
@@ -172,7 +172,7 @@ public class SpeedometerStyleKit : NSObject {
         //// amountLabel Drawing
         let amountLabelRect = CGRectMake(view_container.minX + floor(view_container.width * 0.17000 + 0.5), view_container.minY + floor(view_container.height * 0.50000 + 0.5), floor(view_container.width * 0.83000 + 0.5) - floor(view_container.width * 0.17000 + 0.5), floor(view_container.height * 0.59500 + 0.5) - floor(view_container.height * 0.50000 + 0.5))
         var amountLabelTextContent = NSString(string: "Total")
-        let amountLabelStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        let amountLabelStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         amountLabelStyle.alignment = NSTextAlignment.Center
         
         let amountLabelFontAttributes = [NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 17)!, NSForegroundColorAttributeName: gradientColor, NSParagraphStyleAttributeName: amountLabelStyle]
@@ -186,7 +186,7 @@ public class SpeedometerStyleKit : NSObject {
         
         //// totalPlaceholder Drawing
         let totalPlaceholderRect = CGRectMake(view_container.minX + floor(view_container.width * 0.07500 + 0.5), view_container.minY + floor(view_container.height * 0.59000 + 0.5), floor(view_container.width * 0.92500 + 0.5) - floor(view_container.width * 0.07500 + 0.5), floor(view_container.height * 0.78500 + 0.5) - floor(view_container.height * 0.59000 + 0.5))
-        let totalPlaceholderStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as NSMutableParagraphStyle
+        let totalPlaceholderStyle = NSMutableParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
         totalPlaceholderStyle.alignment = NSTextAlignment.Center
         
         let totalPlaceholderFontAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: topLabelFontSize)!, NSForegroundColorAttributeName: gradientColor, NSParagraphStyleAttributeName: totalPlaceholderStyle]
